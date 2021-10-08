@@ -89,4 +89,48 @@ entries:
     urls:
     - https://finleap-connect.github.io/charts/monoskope-0.0.0-5d18b5.tgz
     version: 0.0.0-5d18b5
-generated: "2021-09-23T11:20:08.57723908Z"
+  - apiVersion: v2
+    appVersion: 0.0.0-0e1b2d
+    created: "2021-10-08T12:26:04.265199019Z"
+    dependencies:
+    - condition: gateway.enabled,global.gateway.enabled
+      name: gateway
+      repository: file://../gateway
+      version: 0.0.0-0e1b2d
+    - condition: eventstore.enabled,global.eventstore.enabled
+      name: eventstore
+      repository: file://../eventstore
+      version: 0.0.0-0e1b2d
+    - condition: commandhandler.enabled,global.commandhandler.enabled
+      name: commandhandler
+      repository: file://../commandhandler
+      version: 0.0.0-0e1b2d
+    - condition: queryhandler.enabled,global.queryhandler.enabled
+      name: queryhandler
+      repository: file://../queryhandler
+      version: 0.0.0-0e1b2d
+    - condition: cluster-bootstrap-reactor.enabled,global.cluster-bootstrap-reactor.enabled
+      name: cluster-bootstrap-reactor
+      repository: file://../cluster-bootstrap-reactor
+      version: 0.0.0-0e1b2d
+    - condition: cockroachdb.enabled,global.cockroachdb.enabled
+      name: cockroachdb
+      repository: https://charts.cockroachdb.com/
+      version: 6.1.2
+    - condition: rabbitmq.enabled,global.rabbitmq.enabled
+      name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami
+      version: 8.17.0
+    - condition: ambassador.deploy,global.ambassador.deploy
+      name: ambassador
+      repository: https://getambassador.io
+      version: 6.7.11
+    description: Monoskope implements the management and operation of tenants, users
+      and their roles in a Kubernetes multi-cluster environment.
+    digest: dd171d3cd5c3445abcf25d4ab48fb4b076b523a6c385b14ebc83aaed44a3b654
+    name: monoskope
+    type: application
+    urls:
+    - https://finleap-connect.github.io/charts/monoskope-0.0.0-0e1b2d.tgz
+    version: 0.0.0-0e1b2d
+generated: "2021-10-08T12:26:04.249879397Z"
