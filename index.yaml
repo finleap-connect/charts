@@ -3,7 +3,7 @@ entries:
   monoskope:
   - apiVersion: v2
     appVersion: v0.1.2
-    created: "2021-10-08T14:00:43.126772116Z"
+    created: "2021-10-08T14:05:52.997536199Z"
     dependencies:
     - condition: gateway.enabled,global.gateway.enabled
       name: gateway
@@ -39,7 +39,7 @@ entries:
       version: 6.7.11
     description: Monoskope implements the management and operation of tenants, users
       and their roles in a Kubernetes multi-cluster environment.
-    digest: b1efb2c8ee943bf2e604ccf78e2e7e79fa067701b681dfc1f146f0bd2d691e3f
+    digest: 86a3dba1a298cdbb3b3df89a8cfd1d238375e34f496a9cd5d93e4f50fc8ad92a
     name: monoskope
     type: application
     urls:
@@ -265,4 +265,4 @@ entries:
     urls:
     - https://finleap-connect.github.io/charts/monoskope-0.0.0-0e1b2d.tgz
     version: 0.0.0-0e1b2d
-generated: "2021-10-08T14:00:43.112664018Z"
+generated: "2021-10-08T14:05:52.983206006Z"
