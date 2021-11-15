@@ -354,6 +354,50 @@ entries:
     - https://finleap-connect.github.io/charts/monoskope-0.1.6-rc2.tgz
     version: 0.1.6-rc2
   - apiVersion: v2
+    appVersion: v0.1.6-rc10
+    created: "2021-11-15T17:01:32.049023985Z"
+    dependencies:
+    - condition: gateway.enabled,global.gateway.enabled
+      name: gateway
+      repository: file://../gateway
+      version: v0.1.6-rc10
+    - condition: eventstore.enabled,global.eventstore.enabled
+      name: eventstore
+      repository: file://../eventstore
+      version: v0.1.6-rc10
+    - condition: commandhandler.enabled,global.commandhandler.enabled
+      name: commandhandler
+      repository: file://../commandhandler
+      version: v0.1.6-rc10
+    - condition: queryhandler.enabled,global.queryhandler.enabled
+      name: queryhandler
+      repository: file://../queryhandler
+      version: v0.1.6-rc10
+    - condition: cluster-bootstrap-reactor.enabled,global.cluster-bootstrap-reactor.enabled
+      name: cluster-bootstrap-reactor
+      repository: file://../cluster-bootstrap-reactor
+      version: v0.1.6-rc10
+    - condition: cockroachdb.enabled,global.cockroachdb.enabled
+      name: cockroachdb
+      repository: https://charts.cockroachdb.com/
+      version: 6.1.2
+    - condition: rabbitmq.enabled,global.rabbitmq.enabled
+      name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami
+      version: 8.24.3
+    - condition: ambassador.deploy,global.ambassador.deploy
+      name: ambassador
+      repository: https://getambassador.io
+      version: 6.7.11
+    description: Monoskope implements the management and operation of tenants, users
+      and their roles in a Kubernetes multi-cluster environment.
+    digest: d6b3571b14de187bf8b33be25ce467ad6c1bc30c646f59745acea7c1a6a61282
+    name: monoskope
+    type: application
+    urls:
+    - https://finleap-connect.github.io/charts/monoskope-0.1.6-rc10.tgz
+    version: 0.1.6-rc10
+  - apiVersion: v2
     appVersion: v0.1.6-rc1
     created: "2021-10-21T08:01:08.543999048Z"
     dependencies:
@@ -837,4 +881,4 @@ entries:
     urls:
     - https://finleap-connect.github.io/charts/monoskope-0.0.0-0e1b2d.tgz
     version: 0.0.0-0e1b2d
-generated: "2021-11-15T16:12:26.437661578Z"
+generated: "2021-11-15T17:01:32.032796716Z"
