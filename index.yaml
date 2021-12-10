@@ -338,6 +338,54 @@ entries:
     - https://finleap-connect.github.io/charts/monoskope-0.2.0-rc3.tgz
     version: 0.2.0-rc3
   - apiVersion: v2
+    appVersion: v0.2.0-rc21
+    created: "2021-12-10T10:04:21.127824974Z"
+    dependencies:
+    - condition: gateway.enabled,global.gateway.enabled
+      name: gateway
+      repository: file://../gateway
+      version: v0.2.0-rc21
+    - condition: eventstore.enabled,global.eventstore.enabled
+      name: eventstore
+      repository: file://../eventstore
+      version: v0.2.0-rc21
+    - condition: commandhandler.enabled,global.commandhandler.enabled
+      name: commandhandler
+      repository: file://../commandhandler
+      version: v0.2.0-rc21
+    - condition: queryhandler.enabled,global.queryhandler.enabled
+      name: queryhandler
+      repository: file://../queryhandler
+      version: v0.2.0-rc21
+    - condition: cluster-bootstrap-reactor.enabled,global.cluster-bootstrap-reactor.enabled
+      name: cluster-bootstrap-reactor
+      repository: file://../cluster-bootstrap-reactor
+      version: v0.2.0-rc21
+    - condition: scimserver.enabled,global.scimserver.enabled
+      name: scimserver
+      repository: file://../scimserver
+      version: v0.2.0-rc21
+    - condition: cockroachdb.enabled,global.cockroachdb.enabled
+      name: cockroachdb
+      repository: https://charts.cockroachdb.com/
+      version: 6.1.2
+    - condition: rabbitmq.enabled,global.rabbitmq.enabled
+      name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami
+      version: 8.24.3
+    - condition: ambassador.deploy,global.ambassador.deploy
+      name: ambassador
+      repository: https://getambassador.io
+      version: 6.7.11
+    description: Monoskope implements the management and operation of tenants, users
+      and their roles in a Kubernetes multi-cluster environment.
+    digest: b097fc8423e8de4ece56a3dc2adca8763a21ba2bd8b500a6eb32450f5b63bc5e
+    name: monoskope
+    type: application
+    urls:
+    - https://finleap-connect.github.io/charts/monoskope-0.2.0-rc21.tgz
+    version: 0.2.0-rc21
+  - apiVersion: v2
     appVersion: v0.2.0-rc20
     created: "2021-12-10T09:59:38.025779921Z"
     dependencies:
@@ -1929,4 +1977,4 @@ entries:
     urls:
     - https://finleap-connect.github.io/charts/monoskope-0.0.0-0e1b2d.tgz
     version: 0.0.0-0e1b2d
-generated: "2021-12-10T09:59:38.009118265Z"
+generated: "2021-12-10T10:04:21.113554087Z"
