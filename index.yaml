@@ -3539,6 +3539,17 @@ entries:
     version: 0.0.0-0e1b2d
   vault-operator:
   - apiVersion: v2
+    appVersion: v0.14.1
+    created: "2022-03-07T14:40:36.248654214Z"
+    description: VaultOperator provides a CRD to interact securely and indirectly
+      with secrets stored in Hashicorp Vault.
+    digest: 977b43bdc868683e941e965602ea8d31ca2d6ef18a71ad3c450fd88d0505d375
+    name: vault-operator
+    type: application
+    urls:
+    - https://finleap-connect.github.io/charts/vault-operator-0.14.1.tgz
+    version: 0.14.1
+  - apiVersion: v2
     appVersion: v0.14.0
     created: "2022-03-07T14:14:20.106830845Z"
     description: VaultOperator provides a CRD to interact securely and indirectly
@@ -3549,4 +3560,4 @@ entries:
     urls:
     - https://finleap-connect.github.io/charts/vault-operator-0.14.0.tgz
     version: 0.14.0
-generated: "2022-03-07T14:14:20.104934674Z"
+generated: "2022-03-07T14:40:36.247284567Z"
