@@ -3537,4 +3537,16 @@ entries:
     urls:
     - https://finleap-connect.github.io/charts/monoskope-0.0.0-0e1b2d.tgz
     version: 0.0.0-0e1b2d
-generated: "2022-02-15T13:04:43.119674843Z"
+  vault-operator:
+  - apiVersion: v2
+    appVersion: v0.14.0
+    created: "2022-03-07T14:14:20.106830845Z"
+    description: VaultOperator provides a CRD to interact securely and indirectly
+      with secrets stored in Hashicorp Vault.
+    digest: 0c0c8cc6b4277e91c1a389ba1cdb65a323d8786eb5760ac833e874609de6c3c6
+    name: vault-operator
+    type: application
+    urls:
+    - https://finleap-connect.github.io/charts/vault-operator-0.14.0.tgz
+    version: 0.14.0
+generated: "2022-03-07T14:14:20.104934674Z"
