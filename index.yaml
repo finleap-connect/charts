@@ -242,6 +242,54 @@ entries:
     - https://finleap-connect.github.io/charts/monoskope-0.3.6-dev5.tgz
     version: 0.3.6-dev5
   - apiVersion: v2
+    appVersion: v0.3.6-dev43
+    created: "2022-04-13T10:25:56.984588565Z"
+    dependencies:
+    - condition: gateway.enabled,global.gateway.enabled
+      name: gateway
+      repository: file://../gateway
+      version: v0.3.6-dev43
+    - condition: eventstore.enabled,global.eventstore.enabled
+      name: eventstore
+      repository: file://../eventstore
+      version: v0.3.6-dev43
+    - condition: commandhandler.enabled,global.commandhandler.enabled
+      name: commandhandler
+      repository: file://../commandhandler
+      version: v0.3.6-dev43
+    - condition: queryhandler.enabled,global.queryhandler.enabled
+      name: queryhandler
+      repository: file://../queryhandler
+      version: v0.3.6-dev43
+    - condition: cluster-bootstrap-reactor.enabled,global.cluster-bootstrap-reactor.enabled
+      name: cluster-bootstrap-reactor
+      repository: file://../cluster-bootstrap-reactor
+      version: v0.3.6-dev43
+    - condition: scimserver.enabled,global.scimserver.enabled
+      name: scimserver
+      repository: file://../scimserver
+      version: v0.3.6-dev43
+    - condition: cockroachdb.enabled,global.cockroachdb.enabled
+      name: cockroachdb
+      repository: https://charts.cockroachdb.com/
+      version: 7.0.1
+    - condition: rabbitmq.enabled,global.rabbitmq.enabled
+      name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami
+      version: 8.24.3
+    - condition: ambassador.deploy,global.ambassador.deploy
+      name: ambassador
+      repository: https://getambassador.io
+      version: 6.9.4
+    description: Monoskope implements the management and operation of tenants, users
+      and their roles in a Kubernetes multi-cluster environment.
+    digest: 5f68a0ac25a4c566d7b4245a606b01f30f29af01c00947265bb970378d8cf03a
+    name: monoskope
+    type: application
+    urls:
+    - https://finleap-connect.github.io/charts/monoskope-0.3.6-dev43.tgz
+    version: 0.3.6-dev43
+  - apiVersion: v2
     appVersion: v0.3.6-dev42
     created: "2022-04-13T10:11:16.932673147Z"
     dependencies:
@@ -5834,4 +5882,4 @@ entries:
     urls:
     - https://finleap-connect.github.io/charts/vault-operator-0.14.0.tgz
     version: 0.14.0
-generated: "2022-04-13T10:11:16.918109086Z"
+generated: "2022-04-13T10:25:56.970895082Z"
