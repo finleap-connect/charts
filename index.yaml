@@ -2787,7 +2787,7 @@ entries:
     version: 0.3.6-dev0
   - apiVersion: v2
     appVersion: v0.3.5
-    created: "2022-03-25T10:57:01.409078272Z"
+    created: "2022-05-11T13:36:57.214576722Z"
     dependencies:
     - condition: gateway.enabled,global.gateway.enabled
       name: gateway
@@ -2816,7 +2816,7 @@ entries:
     - condition: cockroachdb.enabled,global.cockroachdb.enabled
       name: cockroachdb
       repository: https://charts.cockroachdb.com/
-      version: 6.1.2
+      version: 7.0.1
     - condition: rabbitmq.enabled,global.rabbitmq.enabled
       name: rabbitmq
       repository: https://charts.bitnami.com/bitnami
@@ -2824,10 +2824,10 @@ entries:
     - condition: ambassador.deploy,global.ambassador.deploy
       name: ambassador
       repository: https://getambassador.io
-      version: 6.7.11
+      version: 6.9.4
     description: Monoskope implements the management and operation of tenants, users
       and their roles in a Kubernetes multi-cluster environment.
-    digest: 3ae22f0d751f7bc04f31a87047b7b48320b807d8ef54e0c4d34a07c34d057a59
+    digest: 72e01acefebcf3a4db14a9b7203d550bc0fb8b388027fce96dd10ff53823a245
     name: monoskope
     type: application
     urls:
@@ -6554,4 +6554,4 @@ entries:
     urls:
     - https://finleap-connect.github.io/charts/vault-operator-0.14.0.tgz
     version: 0.14.0
-generated: "2022-04-29T11:11:30.18216723Z"
+generated: "2022-05-11T13:36:57.200212335Z"
