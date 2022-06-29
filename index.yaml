@@ -1,5 +1,17 @@
 apiVersion: v1
 entries:
+  backup-operator:
+  - apiVersion: v1
+    created: "2022-06-29T12:50:14.19071069Z"
+    description: K8s operator to provide backups for several sources
+    digest: 3d713e94720acd458591770790c98b5fb06da02e2ab31970eb6afcd450bee081
+    home: https://github.com/finleap-connect/backup-operator
+    name: backup-operator
+    sources:
+    - https://github.com/finleap-connect/backup-operator
+    urls:
+    - https://finleap-connect.github.io/charts/backup-operator-0.4.0.tgz
+    version: 0.4.0
   monoskope:
   - apiVersion: v2
     appVersion: v0.4.3
@@ -7454,4 +7466,4 @@ entries:
     urls:
     - https://finleap-connect.github.io/charts/vault-operator-0.14.0.tgz
     version: 0.14.0
-generated: "2022-06-27T08:48:49.880683681Z"
+generated: "2022-06-29T12:50:14.188568185Z"
