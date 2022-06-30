@@ -1,7 +1,7 @@
 # _config.yaml
 title: Finleap Connect Helm Charts
 description: A chart repo for all Finleap Connect Helm Charts.
-theme: minima
+theme: jekyll-theme-hacker
 url: "https://finleap-connect.github.io/charts/"
 repo_name: finleap-connect
 
