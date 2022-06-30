@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## Getting Started
+# Getting Started
 
 {{ site.description }}
 
@@ -20,7 +20,7 @@ helm repo update
 {% assign all_charts = helm_chart[1] | sort: 'created' | reverse %}
 {% assign latest_chart = all_charts[0] %}
 
-### [{{ site.repo_name }}/{{ title }}](#chart-{{latest_chart.name}})
+### [{{ title }}](#chart-{{title}})
 
 {% if latest_chart.icon %}
   <img src="{{ latest_chart.icon }}" style="height:1.2em;vertical-align: text-top;" />
