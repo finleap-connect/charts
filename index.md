@@ -9,8 +9,8 @@ layout: default
 You can add this repository to your local helm configuration as follows:
 
 ```console
-$ helm repo add {{ site.repo_name }} {{ site.url }}
-$ helm repo update
+helm repo add {{ site.repo_name }} {{ site.url }}
+helm repo update
 ```
 
 ## Charts
@@ -31,13 +31,15 @@ $ helm repo update
 [Home]({{ latest_chart.home }}) \| [Source]({{ latest_chart.sources[0] }})
 
 ```console
-$ helm install {{ site.repo_name }}/{{ latest_chart.name }} --name myrelease --version {{ latest_chart.version }}
+helm install {{ site.repo_name }}/{{ latest_chart.name }} --name myrelease --version {{ latest_chart.version }}
 ```
 
-| Chart Version |  Date |
-|---------------|------|
-{% for chart in all_charts limit:10 -%}
-| [{{ chart.name }}-{{ chart.version }}]({{ chart.urls[0] }}) | {{ chart.created | date_to_rfc822 }} |
+| Chart Version | App Version | Date |
+|---------------|-------------|------|
+{% for chart in all_charts -%}
+{% unless chart.version contains "-" -%}
+| [{{ chart.name }}-{{ chart.version }}]({{ chart.urls[0] }}) | {{ chart.appVersion }} | {{ chart.created | date_to_rfc822 }} |
+{% endunless -%}
 {% endfor -%}
 
 {% endfor %}
