@@ -20,7 +20,7 @@ helm repo update
 {% assign all_charts = helm_chart[1] | sort: 'created' | reverse %}
 {% assign latest_chart = all_charts[0] %}
 
-### [{{ title }}](#chart-{{title}})
+### [{{ title }}](#{{title}})
 
 {% if latest_chart.icon %}
   <img src="{{ latest_chart.icon }}" style="height:1.2em;vertical-align: text-top;" />
