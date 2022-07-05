@@ -36,6 +36,50 @@ entries:
     version: 0.4.0-rc1
   monoskope:
   - apiVersion: v2
+    appVersion: v0.4.4
+    created: "2022-07-05T13:32:48.900765763Z"
+    dependencies:
+    - condition: gateway.enabled,global.gateway.enabled
+      name: gateway
+      repository: file://../gateway
+      version: v0.4.4
+    - condition: eventstore.enabled,global.eventstore.enabled
+      name: eventstore
+      repository: file://../eventstore
+      version: v0.4.4
+    - condition: commandhandler.enabled,global.commandhandler.enabled
+      name: commandhandler
+      repository: file://../commandhandler
+      version: v0.4.4
+    - condition: queryhandler.enabled,global.queryhandler.enabled
+      name: queryhandler
+      repository: file://../queryhandler
+      version: v0.4.4
+    - condition: scimserver.enabled,global.scimserver.enabled
+      name: scimserver
+      repository: file://../scimserver
+      version: v0.4.4
+    - condition: cockroachdb.enabled,global.cockroachdb.enabled
+      name: cockroachdb
+      repository: https://charts.cockroachdb.com/
+      version: 7.0.1
+    - condition: rabbitmq.enabled,global.rabbitmq.enabled
+      name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami
+      version: 8.32.2
+    - condition: ambassador.deploy,global.ambassador.deploy
+      name: ambassador
+      repository: https://getambassador.io
+      version: 6.9.4
+    description: Monoskope implements the management and operation of tenants, users
+      and their roles in a Kubernetes multi-cluster environment.
+    digest: edd5f0fde4772fb054c4953379f5fc0d1571f6411698f30da6901cb25639b204
+    name: monoskope
+    type: application
+    urls:
+    - https://finleap-connect.github.io/charts/monoskope-0.4.4.tgz
+    version: 0.4.4
+  - apiVersion: v2
     appVersion: v0.4.4-dev1
     created: "2022-07-05T11:55:21.636176515Z"
     dependencies:
@@ -7532,4 +7576,4 @@ entries:
     urls:
     - https://finleap-connect.github.io/charts/vault-operator-0.14.0.tgz
     version: 0.14.0
-generated: "2022-07-05T11:55:21.621267675Z"
+generated: "2022-07-05T13:32:48.886991457Z"
