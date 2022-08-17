@@ -36,6 +36,51 @@ entries:
     version: 0.4.0-rc1
   monoskope:
   - apiVersion: v2
+    appVersion: v0.4.10
+    created: "2022-08-17T13:06:01.284348033Z"
+    dependencies:
+    - condition: gateway.enabled,global.gateway.enabled
+      name: gateway
+      repository: file://../gateway
+      version: v0.4.10
+    - condition: eventstore.enabled,global.eventstore.enabled
+      name: eventstore
+      repository: file://../eventstore
+      version: v0.4.10
+    - condition: commandhandler.enabled,global.commandhandler.enabled
+      name: commandhandler
+      repository: file://../commandhandler
+      version: v0.4.10
+    - condition: queryhandler.enabled,global.queryhandler.enabled
+      name: queryhandler
+      repository: file://../queryhandler
+      version: v0.4.10
+    - condition: scimserver.enabled,global.scimserver.enabled
+      name: scimserver
+      repository: file://../scimserver
+      version: v0.4.10
+    - condition: cockroachdb.enabled,global.cockroachdb.enabled
+      name: cockroachdb
+      repository: https://charts.cockroachdb.com/
+      version: 7.0.1
+    - condition: rabbitmq.enabled,global.rabbitmq.enabled
+      name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami
+      version: 8.32.2
+    - alias: ambassador
+      condition: ambassador.deploy,global.ambassador.deploy
+      name: emissary-ingress
+      repository: https://getambassador.io
+      version: 8.0.0
+    description: Monoskope implements the management and operation of tenants, users
+      and their roles in a Kubernetes multi-cluster environment.
+    digest: 3d605de07103b0975d82b8d8cde5314a50435ed94621444fb99d27ebd612bb15
+    name: monoskope
+    type: application
+    urls:
+    - https://finleap-connect.github.io/charts/monoskope-0.4.10.tgz
+    version: 0.4.10
+  - apiVersion: v2
     appVersion: v0.4.9
     created: "2022-08-16T13:37:56.12622913Z"
     dependencies:
@@ -8411,4 +8456,4 @@ entries:
     urls:
     - https://finleap-connect.github.io/charts/vault-operator-0.14.0.tgz
     version: 0.14.0
-generated: "2022-08-16T13:37:56.113752302Z"
+generated: "2022-08-17T13:06:01.272374384Z"
