@@ -36,6 +36,51 @@ entries:
     version: 0.4.0-rc1
   monoskope:
   - apiVersion: v2
+    appVersion: v0.5.0-rc6
+    created: "2022-08-29T09:58:08.648637041Z"
+    dependencies:
+    - condition: gateway.enabled,global.gateway.enabled
+      name: gateway
+      repository: file://../gateway
+      version: v0.5.0-rc6
+    - condition: eventstore.enabled,global.eventstore.enabled
+      name: eventstore
+      repository: file://../eventstore
+      version: v0.5.0-rc6
+    - condition: commandhandler.enabled,global.commandhandler.enabled
+      name: commandhandler
+      repository: file://../commandhandler
+      version: v0.5.0-rc6
+    - condition: queryhandler.enabled,global.queryhandler.enabled
+      name: queryhandler
+      repository: file://../queryhandler
+      version: v0.5.0-rc6
+    - condition: scimserver.enabled,global.scimserver.enabled
+      name: scimserver
+      repository: file://../scimserver
+      version: v0.5.0-rc6
+    - condition: cockroachdb.enabled,global.cockroachdb.enabled
+      name: cockroachdb
+      repository: https://charts.cockroachdb.com/
+      version: 7.0.1
+    - condition: rabbitmq.enabled,global.rabbitmq.enabled
+      name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami
+      version: 8.32.2
+    - alias: ambassador
+      condition: ambassador.deploy,global.ambassador.deploy
+      name: emissary-ingress
+      repository: https://getambassador.io
+      version: 8.0.0
+    description: Monoskope implements the management and operation of tenants, users
+      and their roles in a Kubernetes multi-cluster environment.
+    digest: 729c6c21ffdf3c3eb7ffeefa47afbb3b93562669ac66eee282d57a05aa7ce06b
+    name: monoskope
+    type: application
+    urls:
+    - https://finleap-connect.github.io/charts/monoskope-0.5.0-rc6.tgz
+    version: 0.5.0-rc6
+  - apiVersion: v2
     appVersion: v0.5.0-rc5
     created: "2022-08-29T09:54:11.913910404Z"
     dependencies:
@@ -8816,4 +8861,4 @@ entries:
     urls:
     - https://finleap-connect.github.io/charts/vault-operator-0.14.0.tgz
     version: 0.14.0
-generated: "2022-08-29T09:54:11.900898573Z"
+generated: "2022-08-29T09:58:08.634098686Z"
