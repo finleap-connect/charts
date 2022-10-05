@@ -1836,6 +1836,51 @@ entries:
     - https://finleap-connect.github.io/charts/monoskope-0.5.0-dev2.tgz
     version: 0.5.0-dev2
   - apiVersion: v2
+    appVersion: v0.5.0-dev10
+    created: "2022-10-05T11:31:42.967709758Z"
+    dependencies:
+    - condition: gateway.enabled,global.gateway.enabled
+      name: gateway
+      repository: file://../gateway
+      version: v0.5.0-dev10
+    - condition: eventstore.enabled,global.eventstore.enabled
+      name: eventstore
+      repository: file://../eventstore
+      version: v0.5.0-dev10
+    - condition: commandhandler.enabled,global.commandhandler.enabled
+      name: commandhandler
+      repository: file://../commandhandler
+      version: v0.5.0-dev10
+    - condition: queryhandler.enabled,global.queryhandler.enabled
+      name: queryhandler
+      repository: file://../queryhandler
+      version: v0.5.0-dev10
+    - condition: scimserver.enabled,global.scimserver.enabled
+      name: scimserver
+      repository: file://../scimserver
+      version: v0.5.0-dev10
+    - condition: cockroachdb.enabled,global.cockroachdb.enabled
+      name: cockroachdb
+      repository: https://charts.cockroachdb.com/
+      version: 7.0.1
+    - condition: rabbitmq.enabled,global.rabbitmq.enabled
+      name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami
+      version: 8.32.2
+    - alias: ambassador
+      condition: ambassador.deploy,global.ambassador.deploy
+      name: emissary-ingress
+      repository: https://getambassador.io
+      version: 8.0.0
+    description: Monoskope implements the management and operation of tenants, users
+      and their roles in a Kubernetes multi-cluster environment.
+    digest: ea60abf10add7f3685b48493cf3560b93a10f4f6cb14556c8ea56a21267a219d
+    name: monoskope
+    type: application
+    urls:
+    - https://finleap-connect.github.io/charts/monoskope-0.5.0-dev10.tgz
+    version: 0.5.0-dev10
+  - apiVersion: v2
     appVersion: v0.5.0-dev1
     created: "2022-10-04T10:18:07.661947445Z"
     dependencies:
@@ -10571,4 +10616,4 @@ entries:
     urls:
     - https://finleap-connect.github.io/charts/vault-operator-0.14.0.tgz
     version: 0.14.0
-generated: "2022-10-05T11:19:48.761622857Z"
+generated: "2022-10-05T11:31:42.951546821Z"
